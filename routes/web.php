@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,9 +22,23 @@ Route::get('/shopsingle', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+Route::get('/homefirst', function () {
+    return view('homefirst');
+});
 
+Route::get('/example', function () {
+    return view('example');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
 
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/contact', [App\Http\Controllers\ContactController::class,'contact'])->name('contact.create');
+
+Route::post('/contact-form', [App\Http\Controllers\ContactController::class,'store'])->name('contact.store');
