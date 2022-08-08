@@ -18,15 +18,24 @@ class CreateUsersSeeder extends Seeder
             [
                'name'=>'Admin',
                'email'=>'admin@solarmart.com',
-               'is_admin'=>'1',
+               'role'=>'admin',
+               'status'=>1,
                'password'=> bcrypt('123456'),
             ],
             [
-               'name'=>'User',
-               'email'=>'user@solarmart.com',
-               'is_admin'=>'0',
+               'name'=>'Seller1',
+               'email'=>'seller1@solarmart.com',
+               'role'=>'seller',
+               'status'=>1,
                'password'=> bcrypt('123456'),
             ],
+            [
+                'name'=>'Buyer1',
+                'email'=>'buyer1@solarmart.com',
+                'role'=>'buyer',
+                'status'=>1,
+                'password'=> bcrypt('123456'),
+             ],
         ];
   
         foreach ($user as $key => $value) {

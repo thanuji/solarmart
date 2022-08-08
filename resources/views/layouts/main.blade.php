@@ -1,15 +1,13 @@
 <!--header-->
 <!DOCTYPE html>
 <html lang="en">
-<!-- Mirrored from xvelopers.com/demos/html/paper-1.8.2/home-shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 May 2022 08:18:49 GMT -->
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="{{asset('main_theme/assets/img/basic/favicon.ico')}}" type="image/x-icon">
-    <title>Paper</title>
+    <title>Solarmart</title>
     <link rel="stylesheet" href="{{asset('main_theme/assets/css/app.css')}}">
     <style>
         .loader {
@@ -31,7 +29,6 @@
     </style>
 </head>
 
-
 <body>
     <div id="loader" class="loader">
         <div class="plane-container">
@@ -39,8 +36,6 @@
         </div>
     </div>
     <div id="app" class="paper-loading">
-        <div class="btn-fixed-top-left"><a href="documentations.html" class="btn-fab  btn-primary shadow1"><i
-                    class="icon icon-clipboard-list"></i></a></div>
         <div class="promotionsBar green responsive"> <img src="{{asset('main_theme/assets/img/dummy/promo-banner.png')}}" alt=""><a href="#"
                 class="gtco-nav-toggle gtco-nav-white active closePromotions"><i></i></a></div>
         <div class="header-top hide-for-small-down">
@@ -51,20 +46,33 @@
                             <li><a href="#">Buyer Protection</a></li>
                             <li class="parent"><a href="#">Help</a>
                                 <ul>
-                                    <li><a href="#">Help Center</a></li>
                                     <li><a href="#">Open a Ticket</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Download Mobile App</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-12 col-md-5">
                         <ul class="top-nav text-right">
-                            <li><a href="#"><i class="icon icon-exchange"></i>Compare list</a></li>
-                            <li><a href="#"><i class="icon icon-heart"></i> Wishlist</a></li>
+
+                            @guest
                             <li><a href="{{ route('login') }}"><i class="icon icon-user"></i>Login</a></li>
-                            
-                            <li><a href="#{{ route('register') }}"><i class="icon icon-lock"></i>Register</a></li>
+                            <li><a href="{{ route('register') }}"><i class="icon icon-lock"></i>Register</a></li>
+                            @endguest
+
+                            @auth
+                            <li><a href="#"><i class="icon icon-heart"></i> Wishlist</a></li>
+                            <li><a href="{{ url('dashboard') }}"><i class="icon icon-settings"></i> Dashboard</a></li>
+                            <a button type="button" class="btn btn-danger nav-btn" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                                Log Out</button>
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                            @endauth
+
                         </ul>
                     </div>
                 </div>
@@ -95,9 +103,6 @@
                                             <li><a href="services4.html">Lead Acid Battery</a></li>
                                             <li><a href="services6.html">Gel Battery</a></li>
                                             <li><a href="services5.html">Lithium Iron Battery</a></li>
-
-
-                                        
                                             </ul>
                                         </li>
                                         <li class="parent"><a href="#">Polycrystalline Solar panel</a>
@@ -114,45 +119,11 @@
                                       
                                     </ul>
                                 </li>
-                                  <li> <a href=""> Solutions</a> </li>
+                                <li> <a href=""> Solutions</a> </li>
                              
-                              <!--  <li class="parent megamenu"><a href="#"><i class="icon icon-shopping-bag2"></i>Shop</a>
-                                    <ul class="lg-submenu">
-                                        <li><a><i class="icon icon-shopping-bag2 s-24"></i>Shop Pages</a>
-                                            <ul class="lg-submenu">
-                                                <li><a href="home-shop.html">Shop Home <span
-                                                            class="badge badge-warning">unique</span></a></li>
-                                                <li><a href="shop.html">Shop Simple</a></li>
-                                                <li><a href="shop-single.html">Product Detail <span
-                                                            class="badge badge-danger">hot</span></a></li>
-                                                <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
-                                                <li><a href="register.html">login/signup</a></li>
-                                                <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                                <li><a href="password-recovery.html">Forgot Password</a></li>
-                                                <li><a href="cart.html">Cart <span class="badge">11 items</span></a>
-                                                </li>
-                                                <li><a href="checkout.html">Check out</a></li>
-                                            </ul><a href="http://xvelopers.com/home10-shop.html"
-                                                class="btn btn-success"><i class="icon icon-shopping-bag2 s-24"></i>
-                                                Shop Now</a>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <div class="text-center">
-                                                    <p> <strong>Best Sale Offer</strong> <span
-                                                            class="badge badge-danger">30% Off Today</span></p>
-                                                </div>
-                                                <figure> <img src="{{asset('main_theme/assets/img/demo/ipad.png')}}" alt=""></figure>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li> -->
-                           
                                 <li> <a href=""> Contact Us</a> </li>
                                 
                                 <li> <a href="">About Us</a></li>
-
-                                <li><a href="{{ route('login') }}" class="btn btn-primary nav-btn">Sign Up</a></li>
                             </ul>
                         </div>
                     </div>
@@ -161,10 +132,10 @@
         </div>
 
 
-        <div class="container">
-        @yield('content')
-         </div>
 
+        <main>
+            @yield('content')
+        </main>
          
         <!--footer-->
         
@@ -208,7 +179,7 @@
                             <li class="gplus"><a href="#"><i class="icon icon-google-plus"></i></a></li>
                         </ul>
                         <div class="copyrights">
-                            <p>&#xA9; 2016 knowledge Copyrights</p>
+                            <p>&#xA9; 2022 Solarmart Copyrights</p>
                         </div>
                     </div>
                 </div>
@@ -291,6 +262,4 @@
     </div>
     <script src="{{asset('main_theme/assets/js/app.js')}}"></script>
 </body>
-<!-- Mirrored from xvelopers.com/demos/html/paper-1.8.2/home-shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 May 2022 08:20:14 GMT -->
-
 </html>
