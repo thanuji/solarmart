@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,45 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [App\Http\Controllers\WebController::class, 'index'])->name('home');
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/shopsingle', function () {
+    return view('shopsingle');
 });
+
+Route::get('/dashboard', [App\Http\Controllers\ShopController::class,'index']);
+
+Route::get('/homefirst', function () {
+    return view('homefirst');
+});
+
+Route::get('/example', function () {
+    return view('example');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+
+Auth::routes();
+
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/contact', [App\Http\Controllers\ContactController::class,'contact'])->name('contact.create');
+
+Route::post('/contact-form', [App\Http\Controllers\ContactController::class,'store'])->name('contact.store');
+
+
+//Seller
+Route::get('/shop', [App\Http\Controllers\ShopController::class,'index']);
+Route::post('/shop', [App\Http\Controllers\ShopController::class,'create']);
+
+Route::get('/list_items', [App\Http\Controllers\ItemController::class,'index']);
+Route::get('/add_item', [App\Http\Controllers\ItemController::class,'addItemIndex']);
+Route::post('/add_item', [App\Http\Controllers\ItemController::class,'create']);
+Route::get('/delete_item/{id}', [App\Http\Controllers\ItemController::class,'delete']);
+
+//Buyer
