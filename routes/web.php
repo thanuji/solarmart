@@ -42,6 +42,11 @@ Route::get('/contact', [App\Http\Controllers\ContactController::class,'contact']
 
 Route::post('/contact-form', [App\Http\Controllers\ContactController::class,'store'])->name('contact.store');
 
+//Admin
+Route::get('/list_sellers', [App\Http\Controllers\UserController::class,'listSellers']);
+Route::get('/list_buyers', [App\Http\Controllers\UserController::class,'listBuyers']);
+Route::get('/delete_user/{id}', [App\Http\Controllers\UserController::class,'delete']);
+
 
 //Seller
 Route::get('/shop', [App\Http\Controllers\ShopController::class,'index']);

@@ -12,7 +12,7 @@
                         <div class="col-12 col-lg-6 fadeInRight animated">
                             <div class="xv-slider-content clearfix color-white ">
                                 <h1>Solarmart Energy Marketplace</h1>
-                                <p>SolarSmart helps you streamline the process of going solar & save big on your annual electricity bill. </p>
+                                <p>Solarmart helps you streamline the process of going solar & save big on your annual electricity bill. </p>
                                 <div class="p-t-40"> <a href="#" class="btn btn-img"><img
                                             src="{{asset('main_theme/assets/img/basic/btn-appstore.png')}}" alt=""></a>
                                     <a href="#" class="btn btn-img"><img
@@ -33,7 +33,7 @@
                         <div class="col-12 col-lg-6 fadeInRight animated">
                             <div class="xv-slider-content clearfix color-white">
                                 <h1>Renewble Energy for future</h1>
-                                <p>  Renewable energy is energy derived from natural sources that are replenished at a higher rate than they are consumed. Sunlight and wind, for example, are such sources that are constantly being replenished. Renewable energy sources are plentiful and all around us.</p>
+                                <p> Renewable energy is energy derived from natural sources that are replenished at a higher rate than they are consumed. Sunlight and wind, for example, are such sources that are constantly being replenished. Renewable energy sources are plentiful and all around us.</p>
                             </div>
                         </div>
                     </div>

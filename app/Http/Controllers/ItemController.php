@@ -17,12 +17,24 @@ class ItemController extends Controller
 
     public function index()
     {
-        $user_id=Auth::user()->id;
-        
-        $items = DB::table('item_images')
-        ->join('items', 'item_images.item_id' , 'items.id')->get()->unique('item_id')->where('shop_id',$user_id);
+        $user_role=Auth::user()->role;
 
-        return view('admin.list_items',compact('items'));
+        if($user_role == "admin"){
+            $user_id=Auth::user()->id;
+        
+            $items = DB::table('item_images')
+            ->join('items', 'item_images.item_id' , 'items.id')->get()->unique('item_id');
+    
+            return view('admin.list_items',compact('items'));
+        }else{
+            $user_id=Auth::user()->id;
+        
+            $items = DB::table('item_images')
+            ->join('items', 'item_images.item_id' , 'items.id')->get()->unique('item_id')->where('shop_id',$user_id);
+    
+            return view('admin.list_items',compact('items'));
+        }
+
     }
 
     public function addItemIndex()

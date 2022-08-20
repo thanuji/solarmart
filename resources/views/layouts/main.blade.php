@@ -93,16 +93,16 @@
                                     <ul class="lg-submenu">
                                         <li class="parent"><a href="#">Solar System</a>
                                             <ul class="lg-submenu">
-                                                <li><a href="services1.html">Off-grid Solar System</a></li>
-                                                <li><a href="services2.html">On-grid Solar System</a></li>
-                                                <li><a href="services3.html">Hybrid Solar System</a></li>
+                                                <li><a href="#">Off-grid Solar System</a></li>
+                                                <li><a href="#">On-grid Solar System</a></li>
+                                                <li><a href="#">Hybrid Solar System</a></li>
                                             </ul>
                                         </li>
                                         <li class="parent"><a href="#">Battery</a>
                                             <ul class="lg-submenu">
-                                            <li><a href="services4.html">Lead Acid Battery</a></li>
-                                            <li><a href="services6.html">Gel Battery</a></li>
-                                            <li><a href="services5.html">Lithium Iron Battery</a></li>
+                                            <li><a href="#">Lead Acid Battery</a></li>
+                                            <li><a href="#">Gel Battery</a></li>
+                                            <li><a href="#">Lithium Iron Battery</a></li>
                                             </ul>
                                         </li>
                                         <li class="parent"><a href="#">Polycrystalline Solar panel</a>

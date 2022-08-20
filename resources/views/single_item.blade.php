@@ -83,15 +83,7 @@
                         <div class="tab-content">
                             <div class="tab-pane fade in" id="one-2">
                                 <p>
-                                    Proin gravida nibh vel velit auctor aliquet. Aenean
-                                    sollicitudin, nec sagittis sem lorem quis bibe dum
-                                    auctor, nisi elit consequat ipsum, nec sagittis sem
-                                    nibh id elit. Duis sed odio sit amet nibh vulputate
-                                    cursus a nec sagittis sem sit amet mauris. Morbi
-                                    accumsan ipsum velit. Nam nec tellus a odio tincidunt
-                                    auctor a ornare odio. Proin gravida nibh vel velit
-                                    auctor aliquet. Aenean sollicitudin, nec sagittis sem
-                                    lorem quis bibe dum auctor.
+                                700W Biggest in The World Free Shipping Half Cell PV Solar Energy System Power Monocrystalline Solar Panel with TUV CE ISO IEC
                                 </p>
                                 <ul class="iconList p-t-20">
                                     <li>
@@ -127,16 +119,7 @@
                                 </ul>
                             </div>
                             <div class="tab-pane fade" id="three-2">
-                                Proin gravida nibh vel velit auctor aliquet. Aenean
-                                sollicitudin, nec sagittis sem lorem quis bibe dum
-                                auctor, nisi elit consequat ipsum, nec sagittis sem nibh
-                                id elit. Duis sed odio sit amet nibh vulputate cursus a
-                                nec sagittis sem sit amet mauris. Morbi accumsan ipsum
-                                velit. Nam nec tellus a odio tincidunt auctor a ornare
-                                odio. Proin gravida nibh vel velit auctor aliquet.
-                                Aenean sollicitudin, nec sagittis sem lorem quis bibe
-                                dum auctor.
-                            </div>
+                                    6 months money back garanty
                         </div>
                     </div>
                 </div>
