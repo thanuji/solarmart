@@ -12,8 +12,7 @@
                         <div class="col-12 col-lg-6 fadeInRight animated">
                             <div class="xv-slider-content clearfix color-white ">
                                 <h1>Solarmart Energy Marketplace</h1>
-                                <p>Sed eget orci eleifend enim mattis suscipit. Suspendisse potenti non
-                                    ipsum.</p>
+                                <p>SolarSmart helps you streamline the process of going solar & save big on your annual electricity bill. </p>
                                 <div class="p-t-40"> <a href="#" class="btn btn-img"><img
                                             src="{{asset('main_theme/assets/img/basic/btn-appstore.png')}}" alt=""></a>
                                     <a href="#" class="btn btn-img"><img
@@ -30,13 +29,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="hidden-sm-down col-lg-6 fadeInLeft animated"> <img
-                                src="{{asset('main_theme/assets/img/demo/slider/slider2.png')}}" alt=""></div>
+                                src="{{asset('main_theme/assets/img/demo/slider/slider4.jpg')}}" alt=""></div>
                         <div class="col-12 col-lg-6 fadeInRight animated">
                             <div class="xv-slider-content clearfix color-white">
-                                <h1>Paper Booster</h1>
-                                <p>When we designed MacBook Pro with Retina display, we started with a blank
-                                    slate. That gave us the freedom to imagine something radical, something
-                                    entirely different.</p>
+                                <h1>Renewble Energy for future</h1>
+                                <p>  Renewable energy is energy derived from natural sources that are replenished at a higher rate than they are consumed. Sunlight and wind, for example, are such sources that are constantly being replenished. Renewable energy sources are plentiful and all around us.</p>
                             </div>
                         </div>
                     </div>
@@ -47,9 +44,8 @@
                     <div class="row">
                         <div class="col-12 col-lg-6 fadeInRight animated">
                             <div class="xv-slider-content clearfix color-white">
-                                <h1>Paper Pages</h1>
-                                <p>When we designed MacBook Pro with Retina display, we started with a blank
-                                    slate. That gave us the freedom</p>
+                                <h1>Solar Battery</h1>
+                                <p>For no city power areas, the battery pack can be  charged by solar panels and used for night lighting; For the areas that city power is expensive, the  battery pack can be charged during the electricity  valley value period, and used at the peak power  period.</p>
                             </div>
                         </div>
                         <div class="hidden-sm-down col-lg-6 fadeInLeft animated"> <img
