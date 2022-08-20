@@ -82,7 +82,7 @@
             <nav class="mainnav navbar navbar-default justify-content-between">
                 <div class="container relative"><a class="offcanvas dl-trigger paper-nav-toggle" type="button"
                         data-toggle="offcanvas" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation"><i></i></a> <a class="navbar-brand" href="index.html"><img
+                        aria-label="Toggle navigation"><i></i></a> <a class="navbar-brand" href="/"><img
                             class="d-inline-block align-top" alt="" src="{{asset('main_theme/assets/img/basic/logo.png')}}"></a>
                     <div class="paper_menu">
                         <div id="dl-menu" class="xv-menuwrapper responsive-menu">
@@ -150,7 +150,7 @@
                             <li><a href="#">Features</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Community</a></li>
-                            <li><a href="login.html">Login</a></li>
+                            <li><a href="login">Login</a></li>
                         </ul>
                     </div>
                     <div class="col-6  col-md-4 col-lg-2">
@@ -161,7 +161,7 @@
                             <li><a href="#">Features</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Community</a></li>
-                            <li><a href="login.html">Login</a></li>
+                            <li><a href="login">Login</a></li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-12 col-12 col-xl-3 responsive-phone">

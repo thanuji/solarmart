@@ -29,4 +29,14 @@ class WebController extends Controller
 
         return view('single_item',compact('item','images','items'));
     }
+
+    public function search(Request $request)
+    {
+        $searchTerm = $request->input('search');
+
+        $items = DB::table('item_images')
+        ->join('items', 'item_images.item_id' , 'items.id')->where('name', 'LIKE', "%{$searchTerm}%")->get()->unique('item_id');
+
+        return view('home',compact('items'));
+    }
 }
