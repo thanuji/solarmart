@@ -1,6 +1,8 @@
 @extends('layouts.main')
 
 @section('content')
+
+<!-- this is home first content -->
  <section>
             <div class="xv-slider-wrap text-white" style="background-image:url('{{asset('main_theme/assets/img/dummy/b1.jpg')}}');">
                     <div class="lightSlider" data-item="1" data-pager="false" data-slide-margin="0" data-gallery="false"
