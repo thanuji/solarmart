@@ -152,24 +152,7 @@
                       data-controls="false"
                       data-position="middle"
                     >
-                      <li data-thumb="{{asset('main_theme/assets/img/demo/ss1.png')}}">
-                        <img src="{{asset('main_theme/assets/img/demo/ss1.png')}}" />
-                      </li>
-                      <li data-thumb="{{asset('main_theme/assets/img/demo/ss2.png')}}">
-                        <img src="{{asset('main_theme/assets/img/demo/ss2.png')}}" />
-                      </li>
-                      <li data-thumb="{{asset('main_theme/assets/img/demo/ss3.png')}}">
-                        <img src="{{asset('main_theme/assets/img/demo/ss3.png')}}" />
-                      </li>
-                      <li data-thumb="{{asset('main_theme/assets/img/demo/ss4.png')}}">
-                        <img src="{{asset('main_theme/assets/img/demo/ss4.png')}}" />
-                      </li>
-                      <li data-thumb="{{asset('main_theme/assets/img/demo/ss5.png')}}">
-                        <img src="{{asset('main_theme/assets/img/demo/ss5.png')}}" />
-                      </li>
-                      <li data-thumb="{{asset('main_theme/assets/img/demo/ss5.png')}}">
-                        <img src="{{asset('main_theme/assets/img/demo/ss5.png')}}" />
-                      </li>
+
                     </ul>
                   </div>
                 </div>

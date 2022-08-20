@@ -15,7 +15,7 @@ use App\Http\Controllers\ContactController;
 
 Route::get('/', [App\Http\Controllers\WebController::class, 'index'])->name('home');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\WebController::class, 'index'])->name('home');
 
 Route::get('/shopsingle', function () {
     return view('shopsingle');
@@ -53,5 +53,5 @@ Route::get('/list_items', [App\Http\Controllers\ItemController::class,'index']);
 Route::get('/add_item', [App\Http\Controllers\ItemController::class,'addItemIndex']);
 Route::post('/add_item', [App\Http\Controllers\ItemController::class,'create']);
 Route::get('/delete_item/{id}', [App\Http\Controllers\ItemController::class,'delete']);
-
+Route::get('/item/{id}', [App\Http\Controllers\WebController::class,'single']);
 //Buyer

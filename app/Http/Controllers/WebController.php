@@ -18,4 +18,15 @@ class WebController extends Controller
 
         return view('home',compact('items'));
     }
+
+    public function single(Request $request, $item_id)
+    {
+        $images = DB::table('item_images')->where('item_id',$item_id)->get();
+        $item = DB::table('items')->where('id',$item_id)->get()[0];
+
+        $items = DB::table('item_images')
+        ->join('items', 'item_images.item_id' , 'items.id')->get()->unique('item_id');
+
+        return view('single_item',compact('item','images','items'));
+    }
 }

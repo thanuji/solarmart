@@ -154,13 +154,6 @@
                         </ul>
                     </div>
                     <div class="col-6  col-md-4 col-lg-2">
-                        <h6>Knowledgebase</h6>
-                        <ul class="footer-links">
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Community</a></li>
-                            <li><a href="login.html">Login</a></li>
-                        </ul>
                     </div>
                     <div class="col-6  col-md-4 col-lg-2">
                         <h6>About Us</h6>
@@ -171,7 +164,7 @@
                             <li><a href="login.html">Login</a></li>
                         </ul>
                     </div>
-                    <div class="col-6 col-md-12 col-12 col-xl-3 responsive-phone">
+                    <div class="col-12 col-md-12 col-12 col-xl-3 responsive-phone">
                         <h6>Connect via Social</h6>
                         <ul class="social">
                             <li class="facebook"><a href="#"><i class="icon icon-facebook"></i></a></li>
