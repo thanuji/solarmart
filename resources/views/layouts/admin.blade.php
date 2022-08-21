@@ -48,10 +48,20 @@
                     </div>
                 </div>
                 <ul class="sidebar-menu scroll">
-                    <li class="treeview"><a href="#"><i class="icon-sailing-boat-water purple-text"></i>
+                    <li class="treeview"><a href="dashboard"><i class="icon-sailing-boat-water purple-text"></i>
                             <span>Dashboard</span></a>
                     </li>
-                    <li class="treeview"><a href="#"><i class="icon icon-package blue-text"></i> <span>Products</span></a>
+                    @if(Auth::user()->role == "admin")
+                    <li class="treeview"><a href="#"><i class="icon icon-package blue-text"></i> <span>Users</span></a>
+                        <ul class="treeview-menu">
+                            <li><a href="list_sellers"><i class="icon icon-circle-o"></i> All Sellers</a>
+                            </li>
+                            <li><a href="list_buyers"><i class="icon icon-circle-o"></i> All Buyers</a>
+                            </li>
+                        </ul>
+                    </li> 
+
+                    <li class="treeview"><a href="dashboard"><i class="icon icon-package blue-text"></i> <span>Products</span></a>
                         <ul class="treeview-menu">
                             <li><a href="list_items"><i class="icon icon-circle-o"></i> All Products</a>
                             </li>
@@ -59,7 +69,33 @@
                             </li>
                         </ul>
                     </li>    
-                    <li><a href="#contact"><i class="icon icon-envelope-o"></i> <span>Contact Form</span></a></li>
+                    <!-- <li><a href="#contact"><i class="icon icon-envelope-o"></i> <span>Contact Form</span></a></li> -->
+                    @endif
+
+                    @if(Auth::user()->role == "seller")
+                    <li class="treeview"><a href="dashboard"><i class="icon icon-package blue-text"></i> <span>Products</span></a>
+                        <ul class="treeview-menu">
+                            <li><a href="list_items"><i class="icon icon-circle-o"></i> All Products</a>
+                            </li>
+                            <li><a href="add_item"><i class="icon icon-pencil"></i>Add New</a>
+                            </li>
+                        </ul>
+                    </li>    
+                    <!-- <li><a href="#contact"><i class="icon icon-envelope-o"></i> <span>Contact Form</span></a></li> -->
+                    @endif
+
+                    @if(Auth::user()->role == "buyer")
+                    <li class="treeview"><a href="#"><i class="icon icon-package blue-text"></i> <span>Products</span></a>
+                        <!-- <ul class="treeview-menu">
+                            <li><a href="list_items"><i class="icon icon-circle-o"></i> All Products</a>
+                            </li>
+                            <li><a href="add_item"><i class="icon icon-pencil"></i>Add New</a>
+                            </li>
+                        </ul> -->
+                    </li>    
+                    <!-- <li><a href="#contact"><i class="icon icon-envelope-o"></i> <span>Contact Form</span></a></li> -->
+                    @endif
+
                 </ul>
             </section>
         </aside>

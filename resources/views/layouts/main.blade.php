@@ -82,7 +82,7 @@
             <nav class="mainnav navbar navbar-default justify-content-between">
                 <div class="container relative"><a class="offcanvas dl-trigger paper-nav-toggle" type="button"
                         data-toggle="offcanvas" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation"><i></i></a> <a class="navbar-brand" href="index.html"><img
+                        aria-label="Toggle navigation"><i></i></a> <a class="navbar-brand" href="/"><img
                             class="d-inline-block align-top" alt="" src="{{asset('main_theme/assets/img/basic/logo.png')}}"></a>
                     <div class="paper_menu">
                         <div id="dl-menu" class="xv-menuwrapper responsive-menu">
@@ -93,16 +93,16 @@
                                     <ul class="lg-submenu">
                                         <li class="parent"><a href="#">Solar System</a>
                                             <ul class="lg-submenu">
-                                                <li><a href="services1.html">Off-grid Solar System</a></li>
-                                                <li><a href="services2.html">On-grid Solar System</a></li>
-                                                <li><a href="services3.html">Hybrid Solar System</a></li>
+                                                <li><a href="#">Off-grid Solar System</a></li>
+                                                <li><a href="#">On-grid Solar System</a></li>
+                                                <li><a href="#">Hybrid Solar System</a></li>
                                             </ul>
                                         </li>
                                         <li class="parent"><a href="#">Battery</a>
                                             <ul class="lg-submenu">
-                                            <li><a href="services4.html">Lead Acid Battery</a></li>
-                                            <li><a href="services6.html">Gel Battery</a></li>
-                                            <li><a href="services5.html">Lithium Iron Battery</a></li>
+                                            <li><a href="#">Lead Acid Battery</a></li>
+                                            <li><a href="#">Gel Battery</a></li>
+                                            <li><a href="#">Lithium Iron Battery</a></li>
                                             </ul>
                                         </li>
                                         <li class="parent"><a href="#">Polycrystalline Solar panel</a>
@@ -150,17 +150,10 @@
                             <li><a href="#">Features</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Community</a></li>
-                            <li><a href="login.html">Login</a></li>
+                            <li><a href="login">Login</a></li>
                         </ul>
                     </div>
                     <div class="col-6  col-md-4 col-lg-2">
-                        <h6>Knowledgebase</h6>
-                        <ul class="footer-links">
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Community</a></li>
-                            <li><a href="login.html">Login</a></li>
-                        </ul>
                     </div>
                     <div class="col-6  col-md-4 col-lg-2">
                         <h6>About Us</h6>
@@ -168,10 +161,10 @@
                             <li><a href="#">Features</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Community</a></li>
-                            <li><a href="login.html">Login</a></li>
+                            <li><a href="login">Login</a></li>
                         </ul>
                     </div>
-                    <div class="col-6 col-md-12 col-12 col-xl-3 responsive-phone">
+                    <div class="col-12 col-md-12 col-12 col-xl-3 responsive-phone">
                         <h6>Connect via Social</h6>
                         <ul class="social">
                             <li class="facebook"><a href="#"><i class="icon icon-facebook"></i></a></li>
