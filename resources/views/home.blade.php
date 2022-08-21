@@ -89,20 +89,24 @@
                         <h3>Best Sellers</h3>
                         <ul>
                             <li class="shop-product">
-                                <figure> <img src="{{asset('main_theme/assets/img/demo/s3.png')}}" alt=""></figure>
-                                <div class="product-info"><a href="#">FASHION NICE JACKET</a>
+                                <figure> <img src="{{asset('main_theme/assets/img/demo/best_1.png')}}" alt="Disclousure"></figure>
+                                <div class="product-info"><a href="#">China Solar cell</a>
                                     <div class="price-tag">$40</div>
                                 </div>
+                                <br>
+                                <br>
                             </li>
                             <li class="shop-product">
-                                <figure> <img src="{{asset('main_theme/assets/img/demo/s4.png')}}" alt=""></figure>
-                                <div class="product-info"><a href="#">FASHION NICE JACKET</a>
+                                <figure> <img src="{{asset('main_theme/assets/img/demo/best_2.png')}}" alt=""></figure>
+                                <div class="product-info"><a href="#">Indian solar smart</a>
                                     <div class="price-tag">$40</div>
                                 </div>
+                                <br>
+                                <br>
                             </li>
                             <li class="shop-product">
-                                <figure> <img src="{{asset('main_theme/assets/img/demo/s5.png')}}" alt=""></figure>
-                                <div class="product-info"><a href="#">FASHION NICE JACKET</a>
+                                <figure> <img src="{{asset('main_theme/assets/img/demo/best_3.png')}}" alt=""></figure>
+                                <div class="product-info"><a href="#">German solar</a>
                                     <div class="price-tag">$40</div>
                                 </div>
                             </li>
